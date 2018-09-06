@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+	<title>HTML Practice</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+<h1>Conditional statements</h1>
+	<script type="text/javascript">
+		document.write("<a href='file:///C:/Users/solideng/Desktop/Opertutorials/javascript/sample/demo2.html' target=_blank>1</a><br>");
+		document.write("<a href='http://www.naver.com' target=_blank>2</a><br>");
+		document.write("<a href='http://www.naver.com' target=_blank>3</a><br>");
+		document.write("<a href='http://www.naver.com' target=_blank>4</a><br>");
+	</script>
+	
+	<script>
+	function nightDayHandler(self){
+		var target = document.querySelector('body')
+		if(self.value === 'night'){
+			target.style.backgroundColor = 'black';
+			target.style.color = 'white';
+			self.value = 'day';
+			
+			var alist = document.querySelectorAll('a');
+			var i = 0;
+			while(i < alist.length){
+				alist[i].style.color = 'powderblue';
+				i = i + 1;
+			}
+		}else{
+			target.style.backgroundColor = 'white';
+			target.style.color = 'black';
+			self.value = 'night';
+			
+			var alist = document.querySelectorAll('a');
+			var i = 0;
+			while(i < alist.length){
+				alist[i].style.color = 'blue';
+				i = i + 1
+			}
+		}
+	}
+	</script>
+
+	
+	<script>
+		function sum(left, right){
+			document.write(left+right+'<br>')
+		}
+		sum(2,3);
+		sum(4,5);
+	</script>
+	
+	<input type='button' value='night' onclick="nightDayHandler(this)">
+	<input type='button' value='night' onclick="nightDayHandler(this)">
+	<input type='button' value='night' onclick="nightDayHandler(this)">
+	<input type='button' value='night' onclick="nightDayHandler(this)">
+	
+	<h1>Array</h1>
+	<h2>define</h2>
+		<script>
+			document.write('var coworkers = ["a","b","c"]<br>')
+			var coworkers = ["a","b","c"]
+			
+			document.write('document.write(coworkers[0]);<br><br>');
+			document.write(coworkers[0]+'<br>');
+			document.write(coworkers[1]+'<br>');
+		</script>
+	<h2>count</h2>
+		<script>
+			document.write('document.write(coworkers.length)<br>');
+			document.write(coworkers.length)
+			
+		</script>
+	<h2>add</h2>
+		<script>
+			document.write('coworkers.push("d")<br>');
+			coworkers.push('d')
+			document.write(coworkers.length)
+		</script>
+	<h1>Loop</h1>
+	<ul>
+		<script>
+			document.write("<a href='http://www.naver.com' target=_blank><li>1</li></a>")
+			var i = 0;
+			while(i < 3){
+			document.write('<li>2</li>')
+			document.write('<li>3</li>')
+			i = i + 1;
+			}
+			document.write('<li>4</li>')
+		</script>
+	</ul>
+	<h1>Loop & Array</h1>
+	<script>
+		var coworkers = ['123','456','567','1','2']
+	</script>
+	<h2>Co workers</h2>
+	<ul>
+		<script>
+			var i = 0;
+			while(i < coworkers.length){
+			document.write('<li>'+coworkers[i]+'</li>')
+			i = i + 1;
+			}
+		</script>
+		
+		
+		
+	</ul>
+</body>
+</html>

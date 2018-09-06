@@ -7,8 +7,10 @@
 
 <body>
 	<h1>HTML</h1>
-	
-	<h2>TAG List</h2>
+	Hyper Text Markup Language<br>
+	html 이 쉽기 때문에 web을 통해 프로그래머가 되기 좋음
+	<h2>TAG</h2>
+	Table<br>
 	<table border="1">
 		<tr>
 			<td>머릿말</td>
@@ -18,7 +20,7 @@
 		<tr>
 			<td>리스트</td>
 			<td>li</td>
-			<td>ul > li | ol > li </td>
+			<td>ul: li의 그룹(무순서) | ol : li의 그룹(순서) </td>
 		</tr>	
 		<tr>
 			<td>글자진하게</td>
@@ -36,38 +38,66 @@
 
 		<tr>
 			<td>링크</td>
-			<td>href</td>
+			<td>a</td>
+			<td>속성: href(링크주소), target(새텝, 새창등),  </td>
 		</tr>
 		<tr>
 			<td>이미지</td>
 			<td>img</td>
-			<td>src="coding.jpg" width="50%"</td>
+			<td>src="coding2.jpg" width="50%"</td>
 		</tr>
-	</table>	
+	</table>
 	unordered list
 	<ul>
-		<li><a href="1.html">1.HTML</a></li>
-		<li><a href="2.html">2.CSS</a></li>
-		<li><a href="3.html">3.JavaScript</a></li>
-	<ul>
+		<li><a href="1.html" target="_blank" title="html">HTML</a></li>
+		<li><a href="2.html" target="_blank" title="CSS">CSS</a></li>
+		<li><a href="3.html">JavaScript</a></li>
+	</ul>
 
 	ordered list
 	<ol>
-		<li>1.HTML</li>
-		<li>2.CSS</li>
-		<li>3.JavaScript</li>
-	<ol>
-
-	<a href="http://www.w3.org/TR/html5" target="_blank" title="specification">한글</a>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ol>
+	<br>
+	<a href="http://www.naver.com" target="_blank" title="specification">링크</a>
+	<br>
+	<br>
+	<br>
+	<br>
+	그림삽입<br>
  
 
-   insert image <img src="coding.jpg" width="50%"><br><br>
+    <img src="coding2.jpg" width="50%"><br><br>
    
-    Event<br>
-	<input type="button" value="click" onclick="alert('클릭됨')" ><br>
-	<input type="text"  onchange="alert('내용바뀜')" ><br>
-	<input type="text"  onkeydown="alert('키눌림')" ><br>
-	<input type="text"  onkeyup="alert('키눌렀다놓음')" ><br>
+    <h2>Event</h2>
+	<input type="button" value="클릭" onclick="alert('클릭됨')" ><br>
+	
 
+	<script type="text/javascript">
+
+	// 문자열 변수 정의
+	var s = 'ABC abcd Adobe Photoshop';
+
+
+
+	// 문자열을 대문자로 변환
+	s = s.toUpperCase();
+	document.write(s + '<br />');
+	// 출력 결과: ABC ABCD ADOBE PHOTOSHOP
+
+
+
+	// 문자열을 소문자로 변환
+	document.write(s.toLowerCase() + '<br />');
+	// 출력 결과: abc abcd adobe photoshop
+
+	</script>
+	키눌림(onkeydown)<input type="text"  onkeydown="alert('키눌림')" ><br>
+	키눌렀다놓음(onkeyup)<input type="text"  onkeyup="alert('키눌렀다놓음')" ><br>
+	내용바뀜(onchange)<input type="text"  onchange="alert('내용바뀜')" ><br>
+	붙여넣기(onpaste)<input type="text"  onpaste="alert('붙여넣기')" ><br>
+	대문자<input type="text"  onpaste="toUpperCase()" ><br>
 </body>
 </html>
